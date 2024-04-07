@@ -13,10 +13,10 @@ export default function TopBar() {
 
     return (
         <div>
-            <div className="bg-blue-400 w-screen h-5" style={{webkitAppRegion: "drag"}}></div>
+            <div className="bg-purple-700 w-screen h-5 rounded-t-xl" style={{webkitAppRegion: "drag"}}></div>
             <div className="absolute top-0 right-2" id="control-buttons">
-                <button className="" id="minimize" onClick={minimizeWindow} style={{webkitAppRegion: "no-drag"}}><IoRemoveSharp /></button>
-                <button id="close" onClick={closeWindow} style={{webkitAppRegion: "no-drag"}}><IoCloseSharp /></button>
+                <button className=" hover:bg-purple-900" id="minimize" onClick={minimizeWindow} style={{webkitAppRegion: "no-drag"}}><IoRemoveSharp /></button>
+                <button className=" hover:bg-purple-900" id="close" onClick={closeWindow} style={{webkitAppRegion: "no-drag"}}><IoCloseSharp /></button>
             </div>
         </div>
     )
