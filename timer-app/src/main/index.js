@@ -52,8 +52,19 @@ app.whenReady().then(() => {
     optimizer.watchWindowShortcuts(window)
   })
 
-  // IPC test
-  ipcMain.on('ping', () => console.log('pong'))
+  ipcMain.on("close-window", () => {
+    const currentWindow = BrowserWindow.getFocusedWindow();
+    if (currentWindow) {
+      currentWindow.close()
+    }
+  })
+
+  ipcMain.on("minimize-window", () => {
+    const currentWindow = BrowserWindow.getFocusedWindow();
+    if (currentWindow) {
+      currentWindow.minimize()
+    }
+  })
 
   createWindow()
 
