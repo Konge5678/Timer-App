@@ -3,7 +3,7 @@ import InputField from "./inputFields";
 import { IoCheckmarkSharp } from "react-icons/io5";
 
 export default function Timer({isOverlay}) {
-    const [isEditing, setIsEditing] = useState(false);
+    const [isEditing, setIsEditing] = useState(true);
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(1);
     const [seconds, setSeconds] = useState(0);
