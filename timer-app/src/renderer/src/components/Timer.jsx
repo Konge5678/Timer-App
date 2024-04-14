@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import InputField from "./inputFields";
-import { IoCheckmarkSharp } from "react-icons/io5";
+import { IoCheckmarkSharp, IoCaretForward, IoPencil } from "react-icons/io5";
 
 export default function Timer({isOverlay}) {
     const [isEditing, setIsEditing] = useState(true);
@@ -36,7 +36,7 @@ export default function Timer({isOverlay}) {
                         {minutes.toString().padStart(2,"0")}:
                         {seconds.toString().padStart(2,"0")}
                         </h1>
-                        <div id="timer-buttons">
+                        <div className="text-stone-500" id="timer-buttons">
                             {isActive ? 
                             ( <>
                                 <button>pause</button>
@@ -44,8 +44,8 @@ export default function Timer({isOverlay}) {
                                 </>
                             ) : 
                             ( <>
-                                <button>pause</button>
-                                <button>stop</button>
+                                <button className="start text-4xl text-pink-500" onClick={()=>setIsActive(true)}><IoCaretForward /></button>
+                                <button className="start text-2xl text-pink-500" onClick={()=>setIsEditing(true)}><IoPencil /></button>
                                 </>
                             ) 
                         }
