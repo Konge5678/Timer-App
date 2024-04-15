@@ -3,12 +3,14 @@ import InputField from "./inputFields";
 import { IoCheckmarkSharp, IoCaretForward, IoPencil } from "react-icons/io5";
 import { BsFeather } from "react-icons/bs"
 import { IoMdCloseCircleOutline, IoMdPause  } from "react-icons/io";
+import alarm from "../assets/sounds/alarm-sound.mp3";
 export default function Timer({isOverlay}) {
     const [isEditing, setIsEditing] = useState(true);
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(1);
     const [seconds, setSeconds] = useState(0);
     const [isActive, setIsActive] = useState(false);
+    const audio = new Audio(alarm)
 
 
     useEffect(() => {
@@ -21,7 +23,7 @@ export default function Timer({isOverlay}) {
                     setSeconds((seconds) => seconds - 1);
                 } else {
                     if (minutes ===0 && hours === 0){
-
+                        audio.play();
                         clearInterval(intervalId);
                         setIsActive(false);
                     } else {
