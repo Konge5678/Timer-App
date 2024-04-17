@@ -43,6 +43,6 @@ npm run dev
 To start the built application, navigate to the dist directory and run the executable file.
 
 **License**
-This project is licensed under the [MIT License](https://https://opensource.org/license/mit/). See the LICENSE file for details.
+This project is licensed under the [MIT License](https://opensource.org/license/mit). See the LICENSE file for details.
 
 
