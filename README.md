@@ -18,7 +18,7 @@ If you prefer to build the application from source, follow these steps:
 
 **1. Clone the repository:**
 ```sh
-git clone https://github.com/yourusername/timer-app.git
+git clone https://github.com/Konge5678/Timer-App
 ```
 
 **2. Install the dependencies:**
