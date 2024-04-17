@@ -8,9 +8,6 @@ This is an Electron application built with React. It provides a simple and intui
 - Start, pause, and reset the timer
 - Overlay mode for unobtrusive time tracking
 
-## Installation
-
-To install the Timer App, you can download the latest release from the GitHub repository. We provide builds for Windows, macOS, and Linux.
 
 ## Building from Source
 
