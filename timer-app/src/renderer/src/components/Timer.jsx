@@ -56,7 +56,7 @@ export default function Timer({isOverlay}) {
                     onChange={(e)=>setHours(parseInt(e.target.value))}></InputField>
                     <InputField label={"Minutes"} value={minutes}
                     onChange={(e)=>setMinutes(parseInt(e.target.value))}></InputField>
-                    <InputField label={"Seconds"} value={seconds}
+                       <InputField label={"Seconds"} value={seconds}
                     onChange={(e)=>setSeconds(parseInt(e.target.value))}></InputField>
                     <button className="bg-purple-800 text-stone-200 px-14 py-1 rounded-xl text-xl mt-1"
                     onClick={()=>setIsEditing(false)}>
